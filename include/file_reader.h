@@ -5,6 +5,6 @@
 #include <vector>
 #include <string>
 
-std::vector<Point> readPoints(const std::string& filePath);
+std::vector<Point> read_points(const std::string& file_path);
 
-#endif // FILEREADER_HPP
+#endif

@@ -1,14 +1,14 @@
-#include "file_reader.h"
+#include "../include/file_reader.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
 
-std::vector<Point> readPoints(const std::string& filePath) {
+std::vector<Point> read_points(const std::string& file_path) {
     std::vector<Point> points;
-    std::ifstream file(filePath);
+    std::ifstream file(file_path);
 
     if (!file) {
-        std::cerr << "Error: Could not open file " << filePath << std::endl;
+        std::cerr << "Error: Could not open file " << file_path << std::endl;
         return points;
     }
 
